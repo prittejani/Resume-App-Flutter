@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:getwidget/components/text_field/gf_text_field.dart';
+import 'package:resume_app/view/auth/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +17,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("Hello World"),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: LoginScreen(),
     );
   }
 }
